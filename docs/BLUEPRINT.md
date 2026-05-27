@@ -21,7 +21,7 @@ These are the tools every agent needs to survive. They stay in the base prompt p
 |---|------|------|-----------|
 | 1 | **supersearch** | Web research, scraping, raw data collection | `cd ~/Documents/projects/supersearch && python3 -m supersearch '<query>' --raw --out=<dir>` |
 | 2 | **cogito** | Semantic memory retrieval + storage (1,450+ memories) | `cogito recall "query"` / `cogito add "fact"` / `cogito health` |
-| 3 | **himalaya** | Email: read inbox, send, save drafts (rbosch@lpci.ai) | `himalaya envelope list` / `himalaya message save --folder "[Gmail]/Drafts"` |
+| 3 | **himalaya** | Email: read inbox, send, save drafts (roli@hermes-labs.ai) | `himalaya envelope list` / `himalaya message save --folder "[Gmail]/Drafts"` |
 | 4 | **extract.py** | Linguistic feature extraction (13 dimensions from text) | `sys.path.insert(0, '~/Documents/projects/psychographic-pipeline/src'); from extract import extract_features` |
 | 5 | **lintlang** | Static analysis of AI agent configs (H1-H7 + scaffold rules) | `lintlang scan <file> --format json` |
 | 6 | **profiles.db** | 792 psychographic profiles of AI industry decision-makers | `sqlite3 ~/Desktop/hermes-labs-gtm-research/profiles.db "SELECT * FROM profiles WHERE name LIKE '%query%'"` |

@@ -7,7 +7,7 @@ name = "agent-gorgon"
 version = "0.1.0"
 description = "Stop AI agents from fabricating tool output when a registered tool exists — 3-layer hook defense for Claude Code"
 authors = [
-  {name = "Rolando Bosch", email = "rbosch@lpci.ai"}
+  {name = "Rolando Bosch", email = "roli@hermes-labs.ai"}
 ]
 readme = "README.md"
 license = {text = "MIT"}

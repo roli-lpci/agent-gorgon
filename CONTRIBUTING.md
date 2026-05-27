@@ -43,4 +43,4 @@ and set `tested: true`. See `AGENTS.md` for the full 5-step flow.
 
 ## Questions
 
-Open an issue or email rbosch@lpci.ai.
+Open an issue or email roli@hermes-labs.ai.
