@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "agent-gorgon: tool-fabrication defense for AI agents"
+abstract: >-
+  agent-gorgon is an AI reliability tool that stops AI agents from fabricating
+  tool output when a registered tool exists, using a three-layer Claude Code
+  hook defense (UserPromptSubmit, Stop, and a PreToolUse Bash matcher). It is
+  verification by effect against a silent failure mode that evals and
+  observability miss: confabulated output indistinguishable from real tool
+  results.
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/hermes-labs-ai/agent-gorgon"
+url: "https://hermes-labs.ai"
+keywords:
+  - AI reliability
+  - LLM reliability
+  - silent failure modes
+  - verification by effect
+  - tool-fabrication detection
+  - claude-code hooks
+  - agent tool-use enforcement
+  - anti-confabulation
+authors:
+  - family-names: "Bosch Rodriguez"
+    given-names: "Rolando"
+    orcid: "https://orcid.org/0009-0005-4896-1112"
+    affiliation: "Hermes Labs"
+references:
+  - type: article
+    title: "A Taxonomy of Epistemic Failure Modes in Large Language Models"
+    authors:
+      - family-names: "Bosch Rodriguez"
+        given-names: "Rolando"
+    doi: "10.5281/zenodo.19042469"

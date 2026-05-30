@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/roli-lpci/agent-gorgon
+git clone https://github.com/hermes-labs-ai/agent-gorgon
 cd agent-gorgon
 pip install -e .[dev]
 ```
@@ -17,7 +17,7 @@ just install pytest directly: `pip install pytest`.
 pytest tests/ -q
 ```
 
-All 100 tests must pass before submitting a PR.
+All 105 tests must pass before submitting a PR.
 
 ## Format and lint
 

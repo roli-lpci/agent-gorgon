@@ -19,7 +19,7 @@ _Nothing yet._
 - YAML manifest system with `_template.yaml` schema and `hermes-score.yaml` reference implementation.
 - `install.sh`: one-command hook registration into Claude Code `settings.json`.
 - Converters: `csv2json.py`, `json2csv.py`, `json2text.py`, `text2json.py`.
-- 116 passing tests covering all hooks and the discovery engine.
+- 105 passing tests covering all hooks and the discovery engine.
 
-[Unreleased]: https://github.com/roli-lpci/agent-gorgon/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/roli-lpci/agent-gorgon/releases/tag/v0.1.0
+[Unreleased]: https://github.com/hermes-labs-ai/agent-gorgon/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/hermes-labs-ai/agent-gorgon/releases/tag/v0.1.0

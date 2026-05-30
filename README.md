@@ -1,11 +1,10 @@
 # agent-gorgon
 
-**Stop AI agents from fabricating tool output when a registered tool exists.** A 3-layer hook defense for [Claude Code](https://docs.claude.com/en/docs/claude-code) and any agent runtime that supports `UserPromptSubmit` / `PreToolUse` / `Stop` hooks.
+agent-gorgon is a 3-layer hook defense for [Claude Code](https://docs.claude.com/en/docs/claude-code) that stops AI agents from fabricating tool output when a registered tool exists, and any agent runtime that supports `UserPromptSubmit` / `PreToolUse` / `Stop` hooks.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-116%20passing-brightgreen)](tests)
+[![Tests](https://img.shields.io/badge/tests-105%20passing-brightgreen)](tests)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
-[![Hermes Seal](https://img.shields.io/badge/hermes--seal-manifest%20staged-blue)](https://hermes-labs.ai)
 
 ![agent-gorgon](docs/hero.jpg)
 
@@ -66,7 +65,7 @@ In a fresh Claude Code session, give the agent a task that matches a registered 
 cd agent-gorgon && python3 -m pytest tests/ -q
 ```
 
-**116 tests.** Each hook has its own suite covering the happy path plus bypass resistance (can the model opt out via prompt wording? obfuscated task verbs? malformed stdin?). Adversarial test suite included for the `PreToolUse` layer.
+**105 tests.** Each hook has its own suite covering the happy path plus bypass resistance (can the model opt out via prompt wording? obfuscated task verbs? malformed stdin?). Adversarial test suite included for the `PreToolUse` layer.
 
 ## Architecture
 
@@ -77,7 +76,7 @@ agent-gorgon/
 ├── find_tool.py      # discovery engine — natural-language → tool match
 ├── manifests/        # YAML tool descriptors (schema in _template.yaml)
 ├── hooks/            # the 3 enforcement layers
-├── tests/            # pytest suites (116 tests)
+├── tests/            # pytest suites (105 tests)
 ├── converters/       # format bridges (json↔csv, text↔json)
 ├── install.sh        # idempotent installer
 └── docs/             # blueprint + hero image
@@ -107,7 +106,6 @@ Spec'd, built, and tested in one evening using parallel subagent hackathons. The
 
 ## Security and supply chain
 
-- Staged `hermes-seal` v1 manifest at `.hermes-seal.yaml` (if present). Signature is granted out-of-band by the Hermes Labs internal sealing toolchain.
 - Zero runtime dependencies by design — stdlib only.
 
 ## License
