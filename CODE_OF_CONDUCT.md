@@ -9,7 +9,7 @@ By participating in this project (as a contributor, maintainer, or user interact
 Concerns about behavior can be raised to the project maintainer:
 
 - Email: roli@hermes-labs.ai
-- GitHub: open an issue at https://github.com/roli-lpci/agent-gorgon/issues (or use a private channel if sensitive)
+- GitHub: open an issue at https://github.com/hermes-labs-ai/agent-gorgon/issues (or use a private channel if sensitive)
 
 Reports will be reviewed and responded to within 7 days. Maintainer decisions on enforcement are final.
 

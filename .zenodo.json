@@ -1,0 +1,27 @@
+{
+  "upload_type": "software",
+  "title": "agent-gorgon: tool-fabrication defense for AI agents",
+  "description": "agent-gorgon is an AI reliability tool that stops AI agents from fabricating tool output when a registered tool exists, using a three-layer Claude Code hook defense (UserPromptSubmit injects matching tools into context, Stop blocks responses whose structured artifacts match a manifest schema with no tool invoked, and a PreToolUse Bash matcher blocks shell reimplementation of a registered tool). It is verification by effect against a silent failure mode that evals and observability miss: confabulated output indistinguishable from real tool results.",
+  "creators": [
+    { "name": "Bosch Rodriguez, Rolando", "orcid": "0009-0005-4896-1112", "affiliation": "Hermes Labs" }
+  ],
+  "keywords": [
+    "AI reliability",
+    "LLM reliability",
+    "silent failure modes",
+    "verification by effect",
+    "tool-fabrication detection",
+    "claude-code hooks",
+    "agent tool-use enforcement",
+    "anti-confabulation"
+  ],
+  "license": "MIT",
+  "version": "0.1.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.19042469",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

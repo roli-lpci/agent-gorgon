@@ -32,7 +32,7 @@ No. Fully local. All tools, manifests, and logic run offline.
 ## Where examples live
 - `manifests/hermes-score.yaml` - reference manifest showing all fields
 - `manifests/_template.yaml` - copy this to add a new manifest
-- `tests/` - 100+ passing tests covering all three hooks and find_tool.py
+- `tests/` - 105 passing tests covering all three hooks and find_tool.py
 
 ## Files you must never modify
 - `hooks/user_prompt_submit.py` - read-only for callers; hook contract is strict
